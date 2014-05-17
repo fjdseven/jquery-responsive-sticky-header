@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=no">
+
+<title>Responsive sticky header</title>
+
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+
+<div id="headerContainer">
+<div id="headerContent">
+
+<a href="index.html" class="logo">Logo here</a>
+
+<nav>
+<a id="menu-icon" href="#"></a>
+<ul>
+<li><a href="#">Link</a>
+<li><a href="#">Link</a>
+<li><a href="#">Link</a>
+<li><a href="#">Link</a>
+</li></ul>
+</nav>
+
+</div>
+</div>
+
+<div id="bodyContainer">
+</div>
+
+
+</header>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+$(function() {var $document = $(document),
+$element = $('#headerContainer'),
+className = 'stickyNav';
+$document.scroll(function() {if ($document.scrollTop() >= 300) {
+$element.addClass("stickyNav" );}
+else {$element.removeClass("stickyNav");}});});
+</script>
+
+</body>
+</html>
