@@ -24,7 +24,7 @@ This will append the class 'stickyNav' to the 'headerContainer' after a scroll o
 
 As is the CSS will change the navigation bar transparent, but the possibilities are endless.
 
-The responsive navigation will kick in at a viewport width of 694px but this can be changed by ammending the Media Query in the CSS file:
+The responsive navigation will kick in at a viewport width of 694px but this can be changed by amending the Media Query in the CSS file:
 
 <pre><code>@media all and (max-width : 694px) {}
 </code></pre>
